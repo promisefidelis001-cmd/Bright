@@ -66,3 +66,13 @@ a:hover {
     color: white;
     text-decoration: underline;
 }
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
