@@ -233,30 +233,24 @@ window.addEventListener("scroll", function () {
 
 });
 
-// ==========================================
-// Console Message
-// ==========================================
+/.clock-box{
 
-console.log("Portfolio JavaScript Loaded Successfully!");
-
-console.log("Welcome, King Bright!");
-
-console.log("Version 1.0 Ready!");
-
-// ===============================
-// Digital Clock
-// ===============================
-
-function updateClock() {
-
-    const clock = document.getElementById("clock");
-
-    const now = new Date();
-
-    clock.textContent = now.toLocaleTimeString();
-
+    margin-top:25px;
+    text-align:center;
 }
 
-updateClock();
+.clock-box h3{
 
-setInterval(updateClock, 1000);
+    color:#38bdf8;
+    font-size:18px;
+    margin-bottom:8px;
+}
+
+#clock{
+
+    font-size:28px;
+    font-weight:500;
+    letter-spacing:1px;
+    color:#ffffff;
+
+}
