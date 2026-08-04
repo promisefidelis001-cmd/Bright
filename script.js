@@ -233,24 +233,3 @@ window.addEventListener("scroll", function () {
 
 });
 
-/.clock-box{
-
-    margin-top:25px;
-    text-align:center;
-}
-
-.clock-box h3{
-
-    color:#38bdf8;
-    font-size:18px;
-    margin-bottom:8px;
-}
-
-#clock{
-
-    font-size:28px;
-    font-weight:500;
-    letter-spacing:1px;
-    color:#ffffff;
-
-}
