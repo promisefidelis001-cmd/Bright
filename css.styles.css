@@ -1,6 +1,9 @@
-/* ==========================
-   King Bright Portfolio v2
-========================== */
+/* ===================================
+   King Bright Portfolio v3.0
+   Part 1 of 2
+=================================== */
+
+/* RESET */
 
 *{
     margin:0;
@@ -13,140 +16,238 @@ html{
 }
 
 body{
+
     background:#0f172a;
     color:#ffffff;
+
     font-family:Arial, Helvetica, sans-serif;
+
     line-height:1.7;
+
 }
 
-/* Navigation */
+/* LINKS */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+/* NAVIGATION */
 
 nav{
+
     position:sticky;
+
     top:0;
+
     z-index:1000;
 
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
 
     padding:20px 8%;
 
     background:#1e293b;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.35);
+
 }
 
 .logo{
-    font-size:30px;
+
+    font-size:32px;
+
     font-weight:bold;
+
     color:#38bdf8;
+
+    letter-spacing:2px;
+
 }
 
 .nav-links{
+
     display:flex;
-    list-style:none;
-    gap:25px;
+
+    gap:30px;
+
 }
 
 .nav-links a{
+
     color:white;
-    text-decoration:none;
+
     font-weight:bold;
+
     transition:.3s;
+
 }
 
 .nav-links a:hover{
+
     color:#38bdf8;
+
 }
 
-/* Hero */
+/* HERO */
 
 .hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
     text-align:center;
-    padding:120px 20px 100px;
+
+    padding:40px 20px;
+
+}
+
+.hero-content{
+
+    max-width:800px;
+
 }
 
 .hero h1{
+
     font-size:64px;
-    margin-bottom:15px;
+
+    margin-bottom:20px;
+
 }
 
 .hero h2{
+
     color:#38bdf8;
+
     font-size:34px;
+
     margin-bottom:25px;
+
 }
 
 .hero p{
-    max-width:700px;
-    margin:auto;
-    font-size:19px;
+
+    font-size:20px;
+
+    margin-bottom:40px;
+
 }
 
+/* BUTTONS */
+
 .hero-buttons{
-    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
 }
 
 .btn{
-    display:inline-block;
 
     background:#38bdf8;
+
     color:white;
 
-    padding:15px 30px;
+    padding:15px 35px;
 
     border-radius:8px;
-
-    text-decoration:none;
-
-    margin:10px;
 
     font-weight:bold;
 
     transition:.3s;
+
 }
 
 .btn:hover{
+
     background:#0284c7;
-    transform:translateY(-3px);
+
+    transform:translateY(-5px);
+
 }
 
 .btn-outline{
-    background:transparent;
+
     border:2px solid #38bdf8;
+
+    color:#38bdf8;
+
+    padding:15px 35px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
 }
 
 .btn-outline:hover{
+
     background:#38bdf8;
+
+    color:white;
+
 }
 
-/* Sections */
+/* SECTIONS */
 
 section{
+
     padding:80px 8%;
+
 }
 
 section h2{
+
     text-align:center;
+
     color:#38bdf8;
+
     font-size:40px;
+
     margin-bottom:40px;
+
 }
 
 section p{
+
     max-width:850px;
-    margin:15px auto;
+
+    margin:20px auto;
+
     text-align:center;
+
 }
 
-/* Cards */
+/* CARDS */
 
 .cards{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 
-    gap:25px;
+    gap:30px;
 
     margin-top:40px;
 
@@ -156,9 +257,9 @@ section p{
 
     background:#1e293b;
 
-    border-radius:12px;
-
     padding:30px;
+
+    border-radius:15px;
 
     transition:.3s;
 
@@ -170,7 +271,7 @@ section p{
 
     transform:translateY(-10px);
 
-    box-shadow:0 10px 25px rgba(56,189,248,.35);
+    box-shadow:0 10px 25px rgba(56,189,248,.4);
 
 }
 
@@ -180,17 +281,28 @@ section p{
 
     margin-bottom:15px;
 
+    font-size:24px;
+
 }
 
-/* Roadmap */
+.card p{
+
+    margin:0;
+
+}
+
+/* ===================================
+   King Bright Portfolio v3.0
+   Part 2 of 2
+=================================== */
+
+/* ROADMAP */
 
 .roadmap{
 
-    list-style:none;
+    max-width:600px;
 
-    max-width:500px;
-
-    margin:auto;
+    margin:40px auto;
 
 }
 
@@ -206,17 +318,49 @@ section p{
 
     border-radius:8px;
 
+    transition:.3s;
+
 }
 
-/* Contact */
+.roadmap li:hover{
 
-#contact p{
+    transform:translateX(10px);
+
+    background:#26364d;
+
+}
+
+/* CONTACT */
+
+.contact-info{
+
+    margin-top:30px;
+
+}
+
+.contact-info p{
+
+    margin:20px 0;
 
     font-size:20px;
 
 }
 
-/* Footer */
+.contact-info a{
+
+    color:#38bdf8;
+
+    font-weight:bold;
+
+}
+
+.contact-info a:hover{
+
+    color:white;
+
+}
+
+/* FOOTER */
 
 footer{
 
@@ -224,35 +368,67 @@ footer{
 
     text-align:center;
 
-    padding:30px;
+    padding:50px 20px;
 
-    margin-top:50px;
-
-}
-
-/* Links */
-
-a{
-
-    color:inherit;
+    margin-top:80px;
 
 }
 
-a:hover{
+footer h3{
 
     color:#38bdf8;
 
+    font-size:28px;
+
+    margin-bottom:15px;
+
 }
 
-/* Responsive */
+footer p{
 
-@media(max-width:768px){
+    margin:10px 0;
+
+    color:#cbd5e1;
+
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0f172a;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#38bdf8;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#0284c7;
+
+}
+
+/* RESPONSIVE */
+
+@media (max-width:900px){
 
 nav{
 
     flex-direction:column;
 
-    gap:20px;
+    padding:20px;
 
 }
 
@@ -262,17 +438,50 @@ nav{
 
     justify-content:center;
 
+    margin-top:20px;
+
+    gap:15px;
+
 }
 
 .hero h1{
 
-    font-size:46px;
+    font-size:48px;
 
 }
 
 .hero h2{
 
-    font-size:26px;
+    font-size:28px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.btn,
+.btn-outline{
+
+    width:220px;
+
+    text-align:center;
+
+}
+
+section{
+
+    padding:60px 25px;
 
 }
 
@@ -282,4 +491,58 @@ section h2{
 
 }
 
+.cards{
+
+    grid-template-columns:1fr;
+
 }
+
+}
+
+@media (max-width:500px){
+
+.logo{
+
+    font-size:26px;
+
+}
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+.hero h2{
+
+    font-size:22px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+section h2{
+
+    font-size:28px;
+
+}
+
+.card{
+
+    padding:25px;
+
+}
+
+.contact-info p{
+
+    font-size:17px;
+
+}
+
+}
+
+/* END OF CSS */
