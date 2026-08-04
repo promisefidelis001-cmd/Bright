@@ -56,3 +56,13 @@ button:hover {
 section {
     margin: 50px 20px;
 }
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
