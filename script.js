@@ -242,3 +242,21 @@ console.log("Portfolio JavaScript Loaded Successfully!");
 console.log("Welcome, King Bright!");
 
 console.log("Version 1.0 Ready!");
+
+// ===============================
+// Digital Clock
+// ===============================
+
+function updateClock() {
+
+    const clock = document.getElementById("clock");
+
+    const now = new Date();
+
+    clock.textContent = now.toLocaleTimeString();
+
+}
+
+updateClock();
+
+setInterval(updateClock, 1000);
