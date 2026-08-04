@@ -1,9 +1,4 @@
-/* ===================================
-   King Bright Portfolio v3.0
-   Part 1 of 2
-=================================== */
 
-/* RESET */
 
 *{
     margin:0;
@@ -287,16 +282,7 @@ section p{
 
 .card p{
 
-    margin:0;
-
-}
-
-/* ===================================
-   King Bright Portfolio v3.0
-   Part 2 of 2
-=================================== */
-
-/* ROADMAP */
+    margin:
 
 .roadmap{
 
@@ -304,7 +290,7 @@ section p{
 
     margin:40px auto;
 
-}
+
 
 .roadmap li{
 
